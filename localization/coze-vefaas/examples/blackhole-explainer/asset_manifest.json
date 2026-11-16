@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "vid-1",
+      "type": "video",
+      "subtype": "broll",
+      "path": "/Coze/Drive/Video_Maker/assets/blackhole/shots/shot1_collapse.mp4",
+      "source_tool": "generate_video",
+      "provider": "seedance2.0_pro",
+      "model": "seedance2.0_pro",
+      "scene_id": "scene-1",
+      "prompt": "深空星云中一颗巨大的蓝色恒星逐渐耗尽燃料，表面剧烈脉动并出现暗斑，随后猛烈向内坍缩，中心爆发出刺眼白光，光芒散去后原地只剩一个完全漆黑的球体，周围星光被轻微扭曲。",
+      "duration_seconds": 7.04,
+      "resolution": "720x1280",
+      "format": "mp4",
+      "generation_summary": "恒星坍缩形成黑洞，冷蓝暗金色调，缓慢推镜"
+    },
+    {
+      "id": "vid-2",
+      "type": "video",
+      "subtype": "broll",
+      "path": "/Coze/Drive/Video_Maker/assets/blackhole/shots/shot2_accretion.mp4",
+      "source_tool": "generate_video",
+      "provider": "seedance2.0_pro",
+      "model": "seedance2.0_pro",
+      "scene_id": "scene-2",
+      "prompt": "一个纯黑的球体静静悬浮在星空中央，周围环绕高速旋转的橙金色吸积盘，气体被拉成细长光丝螺旋卷入黑暗，背景恒星被引力透镜效应弯曲成弧形光带，黑洞边缘浮现极亮光子环。",
+      "duration_seconds": 7.04,
+      "resolution": "720x1280",
+      "format": "mp4",
+      "generation_summary": "吸积盘与引力透镜，橙金冷蓝强对比，环绕运镜"
+    },
+    {
+      "id": "vid-3",
+      "type": "video",
+      "subtype": "broll",
+      "path": "/Coze/Drive/Video_Maker/assets/blackhole/shots/shot3_horizon.mp4",
+      "source_tool": "generate_video",
+      "provider": "seedance2.0_pro",
+      "model": "seedance2.0_pro",
+      "scene_id": "scene-3",
+      "prompt": "镜头缓慢逼近黑洞的视界边缘，橙色光线被极度拉伸弯曲成丝带，细小粒子流以极高速度坠入黑暗，画面边缘出现空间扭曲的涟漪，一切仿佛凝固，最后光线逐渐暗淡被吞没。",
+      "duration_seconds": 7.04,
+      "resolution": "720x1280",
+      "format": "mp4",
+      "generation_summary": "贴近视界，光线拉伸吞没，极慢推进"
+    },
+    {
+      "id": "narration-main",
+      "type": "audio",
+      "subtype": "narration",
+      "path": "/Coze/Drive/Video_Maker/assets/blackhole/heikong_narration_zh.mp3",
+      "source_tool": "generate_audio",
+      "scene_id": "scene-all",
+      "prompt": "中文男声，纪录片旁白，低沉平稳，语速稍慢",
+      "duration_seconds": 20.808,
+      "format": "mp3",
+      "voice_performance": {
+        "source_section_id": "all",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": { "voice_style": "documentary-male-low", "pace": "slow" },
+        "sample_approved": true,
+        "sample_path": "/Coze/Drive/Video_Maker/assets/blackhole/heikong_narration_zh.mp3",
+        "review_notes": "低沉克制，句间有停顿，与 20 秒时长匹配"
+      }
+    },
+    {
+      "id": "music-bg",
+      "type": "audio",
+      "subtype": "music",
+      "path": "/Coze/Drive/Video_Maker/assets/blackhole/blackhole_ambient_bed.mp3",
+      "source_tool": "generate_music",
+      "scene_id": "scene-all",
+      "prompt": "电影感宇宙环境音乐，低频嗡鸣铺底，极简空灵，无鼓点",
+      "duration_seconds": 121.965,
+      "format": "mp3"
+    },
+    {
+      "id": "subs-zh",
+      "type": "subtitle",
+      "subtype": "srt",
+      "path": "/Coze/Drive/Video_Maker/projects/blackhole-explainer/subtitles/zh.srt",
+      "source_tool": "asr_aligned_manual_correction",
+      "scene_id": "scene-all",
+      "format": "srt"
+    }
+  ],
+  "total_cost_usd": 0,
+  "metadata": {
+    "pipeline": "animated-explainer",
+    "project": "blackhole-explainer",
+    "aspect_ratio": "9:16",
+    "note": "生成类资产由平台工具提供（OpenMontage 原生 tts_selector/image_selector 缺 API key），组装类工具全部走 OpenMontage"
+  }
+}

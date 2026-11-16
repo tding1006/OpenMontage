@@ -1,0 +1,2 @@
+# 构建产物，用 asr/build-runtime.sh 重建
+coze-vefaas/asr/runtime.tar

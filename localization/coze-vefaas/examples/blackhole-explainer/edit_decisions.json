@@ -1,0 +1,135 @@
+{
+  "version": "1.0",
+  "render_runtime": "ffmpeg",
+  "renderer_family": "ffmpeg",
+  "composition_mode": "edl",
+  "cuts": [
+    {
+      "id": "cut-1",
+      "source": "vid-1",
+      "in_seconds": 0,
+      "out_seconds": 7.04,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "none"
+      },
+      "transition_in": "fade",
+      "transition_out": "fade",
+      "transition_duration": 0.2
+    },
+    {
+      "id": "cut-2",
+      "source": "vid-2",
+      "in_seconds": 0,
+      "out_seconds": 7.04,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "none"
+      },
+      "transition_in": "fade",
+      "transition_out": "fade",
+      "transition_duration": 0.2
+    },
+    {
+      "id": "cut-3",
+      "source": "vid-3",
+      "in_seconds": 0,
+      "out_seconds": 6.73,
+      "layer": "primary",
+      "transform": {
+        "scale": 1.0,
+        "position": "center",
+        "animation": "none"
+      },
+      "transition_in": "fade",
+      "transition_out": "fade",
+      "transition_duration": 0.3
+    }
+  ],
+  "overlays": [],
+  "audio": {
+    "narration": {
+      "segments": [
+        {
+          "asset_id": "narration-main",
+          "start_seconds": 0
+        }
+      ]
+    },
+    "music": {
+      "asset_id": "music-bg",
+      "volume": 0.12,
+      "fade_in_seconds": 1.5,
+      "fade_out_seconds": 2.5,
+      "ducking": {
+        "enabled": true,
+        "threshold_db": -3,
+        "reduction_db": -10,
+        "attack_ms": 200,
+        "release_ms": 500
+      }
+    },
+    "sfx": []
+  },
+  "music": {
+    "asset_id": "music-bg",
+    "volume": 0.12,
+    "ducking": true,
+    "fade_in_seconds": 1.5,
+    "fade_out_seconds": 2.5
+  },
+  "subtitles": {
+    "enabled": true,
+    "style": {
+      "font": "Noto Sans CJK SC",
+      "font_size": 68,
+      "bold": true,
+      "primary_color": "&H00FFFFFF&",
+      "outline_color": "&H00000000&",
+      "outline_width": 4,
+      "margin_v": 150,
+      "alignment": 2
+    },
+    "source": "/Coze/Drive/Video_Maker/projects/blackhole-explainer/subtitles/zh.ass",
+    "font": "Noto Sans CJK SC",
+    "font_size": 42,
+    "color": "#FFFFFF",
+    "outline_color": "#000000",
+    "background": "#00000000",
+    "position": "bottom-center",
+    "max_words_per_line": 12
+  },
+  "transitions": [
+    {
+      "after_cut": "cut-1",
+      "type": "fade",
+      "duration": 0.2
+    },
+    {
+      "after_cut": "cut-2",
+      "type": "fade",
+      "duration": 0.2
+    },
+    {
+      "after_cut": "cut-3",
+      "type": "fade",
+      "duration": 0.3
+    }
+  ],
+  "metadata": {
+    "pipeline": "animated-explainer",
+    "playbook": "clean-professional",
+    "target_duration_seconds": 20.8,
+    "aspect_ratio": "9:16",
+    "resolution": "720x1280",
+    "fps": 24,
+    "narration_total_seconds": 20.808,
+    "proposal_render_runtime": "ffmpeg",
+    "note": "硬切保时长精确：三段 7.04/7.04/6.73 = 20.81s，与旁白 20.808s 对齐",
+    "profile": "youtube_shorts"
+  }
+}
